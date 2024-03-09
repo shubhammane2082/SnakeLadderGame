@@ -26,6 +26,7 @@ public class SnakeLadderMain
 				currentPositionPlayer1 -= diceNumber1;
 				break;
 			}
+			Player1.chooseplayer1(currentPositionPlayer1, diceNumber1);
 			
 			
 			System.out.println("Current Position of player is : "+currentPositionPlayer1);
