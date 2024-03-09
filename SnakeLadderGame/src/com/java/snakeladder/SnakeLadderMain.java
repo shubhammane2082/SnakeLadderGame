@@ -6,6 +6,7 @@ public class SnakeLadderMain
 	static int diceNumber1=0;
 	static int option1=0;
 	static final int goal=100;
+	static int count=0;
 	public static void main(String[] args) 
 	{
 		while(currentPositionPlayer1 < goal)
@@ -13,7 +14,7 @@ public class SnakeLadderMain
 			diceNumber1=PlayerDice1.diceNumber1();
 			
 			option1=Checkoption1.checkoption1();
-			
+			count++;
 			switch(option1)
 			{
 			   case 0 :
@@ -28,9 +29,9 @@ public class SnakeLadderMain
 			}
 			Player1.chooseplayer1(currentPositionPlayer1, diceNumber1);
 			
-			
 			System.out.println("Current Position of player is : "+currentPositionPlayer1);
 		}
+		System.out.println("No. of Times Dice Roll is : "+count);
 	}
 
 }
